@@ -1,15 +1,39 @@
-__pycache__/
+.gitignore
+------------------------------------------------
+
+# Ignore IDE metadata
+.vscode/
+.idea/
+
+# Ignore compiled and intermediate files
 *.pyc
-.pytest_cache/
-.env
-*.egg-info/
+*.so
+*.o
+*.class
+
+# Ignore temporary files
+*.tmp
+*.log
+*.tmp/
+
+# Ignore IDE generated files
+__pycache__/
+
+# Ignore generated files by setup.py
 dist/
 build/
-.venv/
-node_modules/
-target/
-bin/
-obj/
-*.o
-*.so
-*.dylib/
+
+# Ignore test-related files
+tests/__pycache__/
+tests/*.class
+tests/*.pyc
+
+# Ignore pip cache
+pip-wheel-metadata/
+
+# Ignore coverage reports
+.coverage
+.coverage.*
+
+# Ignore virtualenv markers
+__pycache__/venv/
